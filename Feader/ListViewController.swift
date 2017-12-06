@@ -7,11 +7,19 @@
 //
 
 import UIKit
-import Alamofire
+import RxAlamofire
+import RxSwift
 
 class ListViewController: UITableViewController {
     
     private var entries = [RSS.Feed.Entry]()
+    
+    private struct Identifier {
+        static let BasicCell = "BasicCell"
+        static let WebViewController = "WebViewController"
+    }
+    
+    private let rssUrlString = "https://fiahfy.blogspot.com/feeds/posts/summary?alt=json"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +32,7 @@ class ListViewController: UITableViewController {
             return
         }
         switch identifier {
-        case "WebViewController":
+        case Identifier.WebViewController:
             guard let url = sender as? URL, let controller = segue.destination as? WebViewController else {
                 return
             }
@@ -43,15 +51,17 @@ class ListViewController: UITableViewController {
     //MARK: Private
     
     private func load() {
-        Alamofire.request("https://fiahfy.blogspot.com/feeds/posts/summary?alt=json")
-            .response { [weak self] (response) in
-                guard let `self` = self, let data = response.data, let rss = try? JSONDecoder().decode(RSS.self, from: data) else {
+        _ = requestData(.get, rssUrlString)
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] (response, data) in
+                guard let `self` = self, let rss = try? JSONDecoder().decode(RSS.self, from: data) else {
                     return
                 }
                 self.entries = rss.feed.entries
                 self.tableView.reloadData()
-                self.refreshControl?.endRefreshing()
-        }
+                }, onError: nil, onCompleted: { [weak self] in
+                    self?.refreshControl?.endRefreshing()
+                }, onDisposed: nil)
     }
 }
 
@@ -67,7 +77,7 @@ extension ListViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BasicCell") ?? UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: Identifier.BasicCell) ?? UITableViewCell()
         let entry = entries[indexPath.row]
         cell.textLabel?.text = entry.title.text
         return cell
@@ -82,6 +92,6 @@ extension ListViewController {
         guard let permalink = entry.permalink, let url = URL(string: permalink) else {
             return
         }
-        performSegue(withIdentifier: "WebViewController", sender: url)
+        performSegue(withIdentifier: Identifier.WebViewController, sender: url)
     }
 }
