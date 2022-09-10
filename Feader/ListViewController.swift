@@ -52,7 +52,7 @@ class ListViewController: UITableViewController {
     
     private func load() {
         _ = requestData(.get, rssUrlString)
-            .observeOn(MainScheduler.instance)
+            .observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] (response, data) in
                 guard let `self` = self, let rss = try? JSONDecoder().decode(RSS.self, from: data) else {
                     return

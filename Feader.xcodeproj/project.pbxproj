@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13A4C89C28CCD7CC00BA9EB9 /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 13A4C89B28CCD7CC00BA9EB9 /* RxAlamofire */; };
 		4586513F1FD4F412003BB59C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586513E1FD4F412003BB59C /* AppDelegate.swift */; };
 		458651411FD4F412003BB59C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458651401FD4F412003BB59C /* ListViewController.swift */; };
 		458651441FD4F412003BB59C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458651421FD4F412003BB59C /* Main.storyboard */; };
@@ -14,11 +15,6 @@
 		458651491FD4F412003BB59C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458651471FD4F412003BB59C /* LaunchScreen.storyboard */; };
 		458651551FD62DCC003BB59C /* RSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458651541FD62DCC003BB59C /* RSS.swift */; };
 		45F2F1721FD6487F001EED74 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F2F1711FD6487F001EED74 /* WebViewController.swift */; };
-		45F2F1831FD76800001EED74 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458651511FD5207C003BB59C /* Alamofire.framework */; };
-		45F2F1841FD76800001EED74 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F2F17B1FD7628C001EED74 /* RxAlamofire.framework */; };
-		45F2F1851FD76800001EED74 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F2F1781FD7628B001EED74 /* RxBlocking.framework */; };
-		45F2F1861FD76800001EED74 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F2F1791FD7628B001EED74 /* RxCocoa.framework */; };
-		45F2F1871FD76800001EED74 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F2F17A1FD7628C001EED74 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,14 +25,8 @@
 		458651451FD4F412003BB59C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		458651481FD4F412003BB59C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4586514A1FD4F412003BB59C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		458651511FD5207C003BB59C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		458651541FD62DCC003BB59C /* RSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSS.swift; sourceTree = "<group>"; };
 		45F2F1711FD6487F001EED74 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		45F2F1771FD7628B001EED74 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
-		45F2F1781FD7628B001EED74 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
-		45F2F1791FD7628B001EED74 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		45F2F17A1FD7628C001EED74 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		45F2F17B1FD7628C001EED74 /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,11 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45F2F1831FD76800001EED74 /* Alamofire.framework in Frameworks */,
-				45F2F1841FD76800001EED74 /* RxAlamofire.framework in Frameworks */,
-				45F2F1851FD76800001EED74 /* RxBlocking.framework in Frameworks */,
-				45F2F1861FD76800001EED74 /* RxCocoa.framework in Frameworks */,
-				45F2F1871FD76800001EED74 /* RxSwift.framework in Frameworks */,
+				13A4C89C28CCD7CC00BA9EB9 /* RxAlamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,12 +75,6 @@
 		458651501FD5207C003BB59C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				45F2F17B1FD7628C001EED74 /* RxAlamofire.framework */,
-				45F2F1781FD7628B001EED74 /* RxBlocking.framework */,
-				45F2F1791FD7628B001EED74 /* RxCocoa.framework */,
-				45F2F17A1FD7628C001EED74 /* RxSwift.framework */,
-				45F2F1771FD7628B001EED74 /* RxTest.framework */,
-				458651511FD5207C003BB59C /* Alamofire.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,13 +106,15 @@
 				458651371FD4F412003BB59C /* Sources */,
 				458651381FD4F412003BB59C /* Frameworks */,
 				458651391FD4F412003BB59C /* Resources */,
-				458651531FD52086003BB59C /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Feader;
+			packageProductDependencies = (
+				13A4C89B28CCD7CC00BA9EB9 /* RxAlamofire */,
+			);
 			productName = Feader;
 			productReference = 4586513B1FD4F412003BB59C /* Feader.app */;
 			productType = "com.apple.product-type.application";
@@ -144,7 +126,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = fiahfy;
 				TargetAttributes = {
 					4586513A1FD4F412003BB59C = {
@@ -162,6 +144,9 @@
 				Base,
 			);
 			mainGroup = 458651321FD4F412003BB59C;
+			packageReferences = (
+				13A4C89828CCD77800BA9EB9 /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+			);
 			productRefGroup = 4586513C1FD4F412003BB59C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -183,32 +168,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		458651531FD52086003BB59C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxAlamofire.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxBlocking.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		458651371FD4F412003BB59C /* Sources */ = {
@@ -258,6 +217,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -265,8 +225,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -292,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -315,6 +277,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -322,8 +285,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -343,10 +308,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -356,15 +322,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = Feader/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.fiahfy.feader;
 				PRODUCT_NAME = Feader;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -374,15 +339,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = Feader/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.fiahfy.feader;
 				PRODUCT_NAME = Feader;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -409,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		13A4C89828CCD77800BA9EB9 /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 6.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		13A4C89B28CCD7CC00BA9EB9 /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13A4C89828CCD77800BA9EB9 /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 458651331FD4F412003BB59C /* Project object */;
 }
