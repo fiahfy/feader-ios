@@ -1,13 +1,8 @@
 import SwiftUI
 
 struct SettingsView: View {
-  private var appVersion: String {
-    Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown"
-  }
-
-  private var buildVersion: String {
-    Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "Unknown"
-  }
+  @ObservedObject
+  private var viewModel = SettingsViewModel()
 
   var body: some View {
     NavigationView {
@@ -20,7 +15,7 @@ struct SettingsView: View {
 
             Spacer()
 
-            Text("\(appVersion) (\(buildVersion))")
+            Text(viewModel.version)
               .font(.body)
               .foregroundColor(.secondary)
           }

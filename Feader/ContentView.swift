@@ -14,6 +14,7 @@ struct ContentView: View {
             Image(systemName: "gearshape")
           }
       }
+      .toolbarBackground(.visible, for: .tabBar)
     }
   }
 }
