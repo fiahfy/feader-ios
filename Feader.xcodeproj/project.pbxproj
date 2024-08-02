@@ -14,6 +14,8 @@
 		45F8EE962C5CD731004D148F /* FeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8EE952C5CD731004D148F /* FeaderTests.swift */; };
 		45F8EEA02C5CD731004D148F /* FeaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8EE9F2C5CD731004D148F /* FeaderUITests.swift */; };
 		45F8EEA22C5CD731004D148F /* FeaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8EEA12C5CD731004D148F /* FeaderUITestsLaunchTests.swift */; };
+		45F8EEB12C5CE13B004D148F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8EEB02C5CE13B004D148F /* HomeView.swift */; };
+		45F8EEB32C5CE15A004D148F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8EEB22C5CE15A004D148F /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		45F8EE9B2C5CD731004D148F /* FeaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F8EE9F2C5CD731004D148F /* FeaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaderUITests.swift; sourceTree = "<group>"; };
 		45F8EEA12C5CD731004D148F /* FeaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		45F8EEB02C5CE13B004D148F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		45F8EEB22C5CE15A004D148F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				45F8EE842C5CD72F004D148F /* FeaderApp.swift */,
 				45F8EE862C5CD72F004D148F /* ContentView.swift */,
+				45F8EEB02C5CE13B004D148F /* HomeView.swift */,
+				45F8EEB22C5CE15A004D148F /* SettingsView.swift */,
 				45F8EE882C5CD730004D148F /* Assets.xcassets */,
 				45F8EE8A2C5CD730004D148F /* Preview Content */,
 			);
@@ -257,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F8EEB12C5CE13B004D148F /* HomeView.swift in Sources */,
+				45F8EEB32C5CE15A004D148F /* SettingsView.swift in Sources */,
 				45F8EE872C5CD72F004D148F /* ContentView.swift in Sources */,
 				45F8EE852C5CD72F004D148F /* FeaderApp.swift in Sources */,
 			);
