@@ -6,12 +6,12 @@ struct ContentView: View {
       Group {
         HomeView()
           .tabItem {
-            Image(systemName: "house")
+            Label("Home", systemImage: "house")
           }
 
         SettingsView()
           .tabItem {
-            Image(systemName: "gearshape")
+            Label("Settings", systemImage: "gearshape")
           }
       }
       .toolbarBackground(.visible, for: .tabBar)
