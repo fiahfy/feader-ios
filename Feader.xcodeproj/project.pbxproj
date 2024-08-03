@@ -22,6 +22,8 @@
 		45F8EEBD2C5D211E004D148F /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8EEBC2C5D211E004D148F /* Link.swift */; };
 		45F8EEC02C5D21FC004D148F /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8EEBF2C5D21FC004D148F /* SettingsViewModel.swift */; };
 		45F8EEC22C5D2291004D148F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8EEC12C5D2291004D148F /* HomeViewModel.swift */; };
+		45F8EEC42C5E134F004D148F /* NavigationWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8EEC32C5E134F004D148F /* NavigationWebView.swift */; };
+		45F8EEC72C5E209E004D148F /* LoadingViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8EEC62C5E209E004D148F /* LoadingViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		45F8EEBC2C5D211E004D148F /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		45F8EEBF2C5D21FC004D148F /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		45F8EEC12C5D2291004D148F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		45F8EEC32C5E134F004D148F /* NavigationWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationWebView.swift; sourceTree = "<group>"; };
+		45F8EEC62C5E209E004D148F /* LoadingViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 				45F8EEB52C5D1FC0004D148F /* Models */,
 				45F8EE8A2C5CD730004D148F /* Preview Content */,
 				45F8EEBE2C5D21E2004D148F /* ViewModels */,
+				45F8EEC52C5E207B004D148F /* ViewModifiers */,
 				45F8EEB42C5D1F7F004D148F /* Views */,
 			);
 			path = Feader;
@@ -151,6 +156,7 @@
 			children = (
 				45F8EEB02C5CE13B004D148F /* HomeView.swift */,
 				45F8EEB22C5CE15A004D148F /* SettingsView.swift */,
+				45F8EEC32C5E134F004D148F /* NavigationWebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +179,14 @@
 				45F8EEC12C5D2291004D148F /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		45F8EEC52C5E207B004D148F /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				45F8EEC62C5E209E004D148F /* LoadingViewModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F8EEC72C5E209E004D148F /* LoadingViewModifier.swift in Sources */,
 				45F8EEBB2C5D2045004D148F /* Entry.swift in Sources */,
 				45F8EEB12C5CE13B004D148F /* HomeView.swift in Sources */,
 				45F8EEB92C5D200E004D148F /* Feed.swift in Sources */,
@@ -315,6 +330,7 @@
 				45F8EE872C5CD72F004D148F /* ContentView.swift in Sources */,
 				45F8EE852C5CD72F004D148F /* FeaderApp.swift in Sources */,
 				45F8EEC02C5D21FC004D148F /* SettingsViewModel.swift in Sources */,
+				45F8EEC42C5E134F004D148F /* NavigationWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
