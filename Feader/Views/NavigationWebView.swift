@@ -35,6 +35,7 @@ struct WebView: UIViewRepresentable {
 
   @Binding
   var title: String
+  // TODO: handle loading
   @Binding
   var isLoading: Bool
 
