@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-  @ObservedObject
+  @StateObject
   private var viewModel = SettingsViewModel()
 
   var body: some View {
